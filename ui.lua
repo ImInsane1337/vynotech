@@ -4624,7 +4624,7 @@ function library:CreateSettingsTab(menu)
     creditsSection:AddText({text = "TG/DS: insane_ru"})
 
 
-    --[[configSection:AddBox({text = 'Config Name', flag = 'configinput'})
+    configSection:AddBox({text = 'Config Name', flag = 'configinput'})
     configSection:AddList({text = 'Config', flag = 'selectedconfig'})
 
     local function refreshConfigs()
@@ -4659,7 +4659,7 @@ function library:CreateSettingsTab(menu)
         end
     end})
 
-    refreshConfigs()]]--
+    refreshConfigs()
 
     mainSection:AddBind({text = 'Open / Close', flag = 'togglebind', nomouse = true, noindicator = true, bind = Enum.KeyCode.RightShift, callback = function()
         library:SetOpen(not library.open)
