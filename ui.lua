@@ -4692,7 +4692,7 @@ function library:CreateSettingsTab(menu)
         library:Unload();
     end})
 
-    --[[mainSection:AddSeparator({text = 'Keybinds'});
+    mainSection:AddSeparator({text = 'Keybinds'});
     mainSection:AddToggle({text = 'Keybind Indicator', flag = 'keybind_indicator', callback = function(bool)
         library.keyIndicator:SetEnabled(bool);
     end})
@@ -4701,7 +4701,7 @@ function library:CreateSettingsTab(menu)
     end});
     mainSection:AddSlider({text = 'Position Y', flag = 'keybind_indicator_y', min = 0, max = 100, increment = .1, value = 35, callback = function()
         library.keyIndicator:SetPosition(newUDim2(library.flags.keybind_indicator_x / 100, 0, library.flags.keybind_indicator_y / 100, 0));    
-    end});]]--
+    end});
 
     mainSection:AddSeparator({text = 'Watermark'})
     mainSection:AddToggle({text = 'Enabled', flag = 'watermark_enabled'});
