@@ -1,9 +1,3 @@
---[[
-Octohook ui lib informant version
-Developed by liam#4567
-Edited by xz#1111
-]]
-
 -- // Load
 
 local startupArgs = ({...})[1] or {}
@@ -4661,7 +4655,7 @@ function library:CreateSettingsTab(menu)
 
     refreshConfigs()
 
-    mainSection:AddBind({text = 'Open / Close', flag = 'togglebind', nomouse = true, noindicator = true, bind = Enum.KeyCode.RightShift, callback = function()
+    mainSection:AddBind({text = 'Open / Close', flag = 'togglebind', nomouse = true, noindicator = true, bind = Enum.KeyCode.Home, callback = function()
         library:SetOpen(not library.open)
     end});
 
